@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="location">
+        <button>London</button>
+        <button>Sydney</button>
+        <button>İstanbul</button>
+        <button>Tokyo</button>
+        <button>Paris</button>
+    </div>
+    <div class="search">
+        <form>
+            <input type="text" placeholder="Bir şehir giriniz...">
+            <button id="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-location-dot"></i></button>
+        </form>
+        <div>
+            <span>°C </span>
+            <span>°F</span>
+        </div>
+    </div>
+    <p class="date">
+        <span class="full-date">Tarih: 06 Eylül 2025</span>
+        <span>Saat: 17.25</span>
+    </p>
+    <h3 class="city">Ankara,Tr</h3>
+    <p class="status">Clouds</p>
+
+    <div class="info">
+        <div class="icon">
+             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" />
+        </div>
+
+        <div class="degree">
+            <span>13.3°</span>
+        </div>
+            <div class="info-areas">
+             <p>
+                                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <span>Hissedilen:</span>
+                <span class="feel">12.8°</span>
+             </p>
+             <p>
+                <i class="fa-solid fa-droplet"></i>
+                <span>Nem:</span>
+                <span class="hum">77%</span>
+             </p>
+             <p>
+                <i class="fa-solid fa-wind"></i>
+                <span>Rüzgar:</span>
+                <span class="wind">5.66km/h</span>
+             </p>
+            </div>
+    </div>
+     <div class="bottom">
+        <div>
+          <i class="fa-solid fa-sun"></i>
+          <span>Doğuş:</span>
+          <span class="sunrise">7:01</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-sun"></i>
+          <span>Batış:</span>
+          <span class="sunset">7:01</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-sun"></i>
+          <span>Yüksek:</span>
+          <span class="max">7:01</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-sun"></i>
+          <span>Düşük:</span>
+          <span class="min">7:01</span>
+        </div>
+      </div>
+    </div>
+    <!-- JS bağlantısı -->
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #2e2e2e;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    width: 70vw;
+    max-width: 600px;
+    min-height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgb(255, 255, 255 , 0);
+}
+.container .location{
+    display: flex;
+    justify-content: space-between;
+}
+.container .location button{
+    background: none;
+    border: 1px solid gray;
+    padding: 10px ;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container .search{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+.container .search form{
+    display: flex;
+    gap: 10px;
+}
+.container .search form input{
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.container .search form button{
+    background: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.date,
+.city,
+.status{
+    text-align: center;
+    margin-top: 10px;
+}
+.status{
+    color: #29d4d4;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 70px;
+}
+.info .icon img{
+    font-size: 50px;
+    color: rgba(9, 9,00);
+}
+.info .degree{
+    font-size: 30px;
+}
+.info .info-areas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.info .info-areas p{
+    font-size: 15px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.bottom div{
+    font-size: 14px;
+}
+
+.sunrise,
+.sunset,
+.max,
+.min{
+    font-weight: bold;
+}
+
+
+@media (max-width:800px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        max-width: unset;
+        border-radius: unset;
+        padding: 100px 20px 50px 20px;
+    }
+}
